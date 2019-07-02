@@ -4,7 +4,7 @@ import 'package:flutter/services.dart';
 
 class Aesplugin {
   static const MethodChannel _channel =
-      const MethodChannel('aesplugin');
+  const MethodChannel('aesplugin');
 
   static Future<String> get platformVersion async {
     final String version = await _channel.invokeMethod('getPlatformVersion');
